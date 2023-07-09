@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#bebebe"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+    >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtn"
+            android:background="@drawable/btn2"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="img"
+            />
+"
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:textColor="@color/black"
+    android:layout_marginRight="50dp"
+    android:layout_height="wrap_content"
+    android:text="Add candidate"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    android:gravity="center"
+    />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit1"
+            android:hint="candidate name"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="candidate id"
+            android:id="@+id/edit2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"
+            android:background="@drawable/btn2"
+            android:textSize="20dp"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:text="Add"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
