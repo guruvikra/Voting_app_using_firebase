@@ -95,8 +95,8 @@ public class customeadaptortwo extends RecyclerView.Adapter<customeadaptortwo.Vi
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()){
                                         Toast.makeText(context, "voted", Toast.LENGTH_SHORT).show();
-//                                        Intent intent=new Intent(context,addcontestent2.class);
-//                                        context.startActivity(intent);
+                                        Intent intent=new Intent(context,ResultPage.class);
+                                        context.startActivity(intent);
                                         Singleton.setUid("voted");
                                     }
 
