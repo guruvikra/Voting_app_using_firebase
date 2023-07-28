@@ -24,6 +24,20 @@
         android:id="@+id/recycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/done"
+    android:background="@drawable/btn2"
+    android:text="Done"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    />
+</LinearLayout>
 </LinearLayout>

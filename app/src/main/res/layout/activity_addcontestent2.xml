@@ -43,18 +43,6 @@
         android:layout_below="@+id/add"
         android:text="result"
         />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/add"
-        android:layout_marginLeft="22dp"
-        android:background="@drawable/btn2"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:layout_toRightOf="@+id/result"
-        android:id="@+id/clear"
-        android:text="Clear"
-        />
+
     </LinearLayout>
 </RelativeLayout>

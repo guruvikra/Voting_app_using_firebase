@@ -42,6 +42,7 @@ public class addcontestent extends AppCompatActivity {
     String imageURL;
     String name="";
     String id="";
+    Button done;
 ArrayList<Structure> arr=new ArrayList<>();
 private  final int Gallery_img=1000;
     @Override
@@ -53,6 +54,15 @@ private  final int Gallery_img=1000;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         customadaptor adaptor=new customadaptor(getApplicationContext(),arr);
         recyclerView.setAdapter(adaptor);
+        done=findViewById(R.id.done);
+        done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
 
         btn.setOnClickListener(new View.OnClickListener() {

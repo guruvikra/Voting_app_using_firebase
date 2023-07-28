@@ -1,43 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ResultPage">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:text="TextView"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="text"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            />
+            <TextView
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="50dp"
+                android:textSize="30dp"
+                android:text="0"
+                />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="TextView"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="358dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="text"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:id="@+id/v2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:text="0"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="text"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="0"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="text"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/v4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:text="0"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

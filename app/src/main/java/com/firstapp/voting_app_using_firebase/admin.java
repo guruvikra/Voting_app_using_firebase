@@ -44,23 +44,16 @@ public class admin extends AppCompatActivity {
                     Toast.makeText(admin.this, "Please enter admin name and password", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    login(adminuser,adminpassword);
+                    if(adminuser.equals("guruvikram886@gmail.com")&&adminpassword.equals("Vikram")){
+                        Intent intent=new Intent(getApplicationContext(),addcontestent2.class);
+                        startActivity(intent);
+                    }
+                    else {
+                        Toast.makeText(admin.this, "Wrong admin password", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
     }
-    public void login(String email,String password){
-        auth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-            @Override
-            public void onSuccess(AuthResult authResult) {
-           startActivity(new Intent(admin.this,addcontestent2.class));
-            }
-        });
-        auth.signInWithEmailAndPassword(email,password).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(admin.this, "Wrong user id or password", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+
 }

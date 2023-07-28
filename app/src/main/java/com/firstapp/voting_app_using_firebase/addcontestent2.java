@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.database.FirebaseDatabase;
+
 public class addcontestent2 extends AppCompatActivity {
 Button add,clear,result;
     @Override
@@ -15,7 +17,6 @@ Button add,clear,result;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addcontestent2);
         add=findViewById(R.id.add);
-        clear=findViewById(R.id.clear);
         result=findViewById(R.id.result);
         result.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,12 +32,6 @@ Button add,clear,result;
                 Intent intent=new Intent(addcontestent2.this,addcontestent.class);
                 startActivity(intent);
                 Toast.makeText(addcontestent2.this, "Add candidate page", Toast.LENGTH_SHORT).show();
-            }
-        });
-        clear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(addcontestent2.this, "clearing the data ", Toast.LENGTH_SHORT).show();
             }
         });
 

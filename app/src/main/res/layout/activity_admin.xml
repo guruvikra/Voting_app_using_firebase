@@ -45,7 +45,9 @@
             <EditText
                 android:id="@+id/admin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/text"
                 android:gravity="center"
                 android:hint="Admin user"/>
         </LinearLayout>
@@ -66,8 +68,11 @@
             <EditText
                 android:id="@+id/adminpass"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:gravity="center"
+                android:password="true"
+                android:background="@drawable/text"
+                android:layout_gravity="center"
                 android:hint="Admin Password"/>
         </LinearLayout>
         <Button
