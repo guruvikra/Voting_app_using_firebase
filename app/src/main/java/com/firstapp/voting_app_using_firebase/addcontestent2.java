@@ -32,6 +32,7 @@ Button add,clear,result;
                 Toast.makeText(addcontestent2.this, "Result pagee", Toast.LENGTH_SHORT).show();
             }
         });
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
