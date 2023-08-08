@@ -44,5 +44,18 @@
         android:text="result"
         />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear"
+            android:background="@drawable/btn2"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="clear"
+            />
+
+
+
     </LinearLayout>
 </RelativeLayout>
